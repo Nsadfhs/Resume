@@ -1,0 +1,154 @@
+/*
+<footer id="footer">
+    <div class="inner">
+      <h2>contact with personal</h2>
+      <ul class="actions">
+        <li><span class="icon fa-phone"></span> <a href="#">010-7399-7695</a></li>
+        <li><span class="icon fa-envelope"></span> <a href="#">nasdfhs@gmail.com</a></li>
+        <li><span class="icon fa-map-marker"></span> 대구광역시</li>
+      </ul>
+    </div>
+    <div class="copyright"><p>
+      &copy; Untitled. Design <a href="#default">Jeong in Etch</a>.<br> Images <a href="https://unsplash.com">Unsplash</a>.
+      </p>
+    </div>
+  </footer>
+*/
+
+
+/*서문*/
+
+#footer {
+  padding: 6em 0 0 0;
+  background: #56132b;
+  text-align: center;
+  color: #c8e7f0;
+}
+
+#footer h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+#footer a {
+  color: #c8e7f0;
+  text-decoration: none;
+}
+
+#footer ul li {
+  padding: 0 2em;
+}
+
+#footer .icon {
+  color: #f6755e;
+}
+
+#footer .inner {
+  margin: 0 auto;
+  max-width: 65em;
+}
+
+#footer .copyright {
+  display: inline-block;
+  color: #a7d9e7;
+  font-size: 0.75em;
+  margin: 0 0 2em 0;
+  padding: 0;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 2em 10em;
+}
+
+
+/*본문*/
+
+ul.actions {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.actions li {
+  display: inline-block;
+  padding: 0 1em 0 0;
+  vertical-align: middle;
+}
+
+ul.actions li:last-child {
+  padding-right: 0;
+}
+
+ul.actions.small li {
+  padding: 0 0.5em 0 0;
+}
+
+ul.actions.vertical li {
+  display: block;
+  padding: 1em 0 0 0;
+}
+
+ul.actions.vertical li:first-child {
+  padding-top: 0;
+}
+
+ul.actions.vertical li>* {
+  margin-bottom: 0;
+}
+
+ul.actions.vertical.small li {
+  padding: 0.5em 0 0 0;
+}
+
+ul.actions.vertical.small li:first-child {
+  padding-top: 0;
+}
+
+ul.actions.fit {
+  display: table;
+  margin-left: -1em;
+  padding: 0;
+  table-layout: fixed;
+  width: calc(100% + 1em);
+}
+
+ul.actions.fit li {
+  display: table-cell;
+  padding: 0 0 0 1em;
+}
+
+ul.actions.fit li>* {
+  margin-bottom: 0;
+}
+
+ul.actions.fit.small {
+  margin-left: -0.5em;
+  width: calc(100% + 0.5em);
+}
+
+ul.actions.fit.small li {
+  padding: 0 0 0 0.5em;
+}
+
+.icon {
+  text-decoration: none;
+  border-bottom: none;
+  position: relative;
+}
+
+.icon:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+
+.icon>.label {
+  display: none;
+}
+
+
+
