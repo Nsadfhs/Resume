@@ -31,8 +31,6 @@
 			animateFunction : params.animateFunction || 'ease',
 			maxPosition: sections.length - 1,
 			currentPosition: 0,
-			displayDots: typeof params.displayDots != 'undefined' ? params.displayDots : true,
-			dotsPosition: params.dotsPosition || 'left'
 		};
 
 		this.defaults = defaults;
@@ -47,7 +45,6 @@
 	 */
 	fullScroll.prototype.init = function () {
 		this.buildSections()
-			.buildDots()
 			.buildPublicFunctions()
 			.addEvents();
 
@@ -65,35 +62,6 @@
 		for (var i = 0; i < sections.length; i++) {
 			sections[i].setAttribute('data-index', i);
 		}
-		return this;
-	};
-
-	/**
-	 * Build dots navigation
-	 * @return {Object} this (fullScroll)
-	 */
-	fullScroll.prototype.buildDots = function () {		
-		this.ul = document.createElement('ul');
-		this.ul.classList.add('dots');
-		this.ul.classList.add(this.defaults.dotsPosition == 'right' ? 'dots-right' : 'dots-left');
-		var _self = this;
-		var sections = this.defaults.sections;		
-
-		for (var i = 0; i < sections.length; i++) {
-			var li = document.createElement('li');
-			var a = document.createElement('a');
-		
-			a.setAttribute('href', '#' + i);			
-			li.appendChild(a);
-			_self.ul.appendChild(li);
-		}
-
-		this.ul.childNodes[0].firstChild.classList.add('active');
-
-		if (this.defaults.displayDots) {
-			document.body.appendChild(this.ul);
-		}
-
 		return this;
 	};
 
