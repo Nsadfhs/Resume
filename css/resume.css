@@ -54,7 +54,7 @@ section ul:after {
 }
 section ul li {
     list-style: circle;
-    line-height:0.8rem;
+    line-height:1.8rem;
 }
 @media screen and (min-width: 600px) {
     section ul {
